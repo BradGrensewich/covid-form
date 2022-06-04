@@ -11,7 +11,7 @@ body {
     margin: 0px;
     padding: 35px;
     width:750px;
-    border: 1px;
+    border: 2px;
     border-style: solid;    
 }
 
@@ -39,24 +39,41 @@ td {
 
 
 .text-in {
-    background-color:lightgray;
+    background-color:aliceblue;
     width: 80%;
+    border-style: none;
+}
+
+#date {
+    border-style: none;
+    background-color: aliceblue;
 }
 
 em {
     font-style: normal;
     color: red;
+    font-weight: bold;
 }
 
 .section-description {
-    border: 2px;
+    border: 1px;
     border-color: black;
     border-style: solid;
+    background-color: rgb(232, 232, 232);
 }
 
 #signature-container {
     display: flex;
     justify-content:space-between;
     align-items: center;    
+}
+
+#expires-when {
+    background-color: aliceblue;
+}
+
+textarea {
+    resize: none;
+    background-color: aliceblue;
 }
 
