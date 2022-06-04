@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+  <title>Personal Information</title>
+</head>
+
+<body>
+  <section class="content">
+    <header><strong>Protected B</strong> (when completed)</header>
+    <h1>Personal Information</h1>
+    <form>
+      <table>
+        <tr>
+          <th></th>
+          <th class="column-header">Employee</th>
+          <th class="column-header">Manager</th>
+        </tr>
+        <tr>
+          <th>Name:</th>
+          <td><input type="text" name="name-employee" class="text-in"></td>
+          <td><input type="text" name="name-manager" class="text-in"></td>
+        </tr>
+        <tr>
+          <th>PRI/HRMIS number for RCMP/<br>
+            DND service number for military:</th>
+          <td><input type="text" name="PRI/HRMIS/DND-employee" class="text-in"></td>
+          <td><input type="text" name="PRI/HRMIS/DND-manager" class="text-in"></td>
+        </tr>
+        <tr>
+          <th>Date of birth:</th>
+          <td><input type="text" name="dob-employee" class="text-in"></td>
+          <td><input type="text" name="dob-manager" class="text-in"></td>
+        </tr>
+        <tr>
+          <th>Organization:</th>
+          <td><input type="text" name="org-employee" class="text-in"></td>
+          <td><input type="text" name="org-manager" class="text-in"></td>
+        </tr>
+      </table>
+      <h2>I attest that my COVID-19 vaccination status is: <em>(required)</em></h2>
+    </form>
+    <p class="section-description">As defined by the <a
+        href="https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=32694">Policy on COVID-19 Vaccination for the Core
+        Public Administration Including the Royal
+        Canadian Mounted Police.</a></p>
+    <input type="radio" id="fully-vaccinated" name="vaccination-status" value="fully-vaccinated">
+    <label for="fully-vaccinated">Fully vaccinated</label>
+    <br>
+    <input type="radio" id="partially-vaccinated" name="vaccination-status" value="partially-vaccinated">
+    <label for="partially-vaccinated">Partially vaccinated (in addition to your attestation, you must also provide your
+      manager with the date of
+      your first vaccination)
+    </label>
+    <br>
+    <input type="radio" id="unvaccinated" name="vaccination-status" value="unvaccinated">
+    <label for="unvaccinated">Unvaccinated</label>
+    <br>
+    <input type="radio" id="unvaccinated-requesting-accommodations" name="vaccination-status"
+      value="unvaccinated-requesting-accommodations">
+    <label for="unvaccinated-requesting-accommodations">Unvaccinated because I am requesting accommodation</label>
+
+    <h3>I am requesting accommodation</h3>
+    <p class="section-description">This section is required if you have indicated that you are unvaccinated because you
+      require accommodation.
+    </p>
+    <input type="radio" id="medical-contraindication" name="reason-for-accommodations" value="medical-contraindication">
+    <label for="medical-contraindication">Due to a medical <a
+        href="https://www.canada.ca/en/public-health/services/publications/healthy-living/canadian-immunization-guide-part-2-vaccine-safety/page-3-contraindications-precautions-concerns.html">contraindication</a>
+      <b>(or)</b></label>
+    <br>
+    <input type="radio" id="human-rights-act" name="reason-for-accommodations" value="human-rights-act">
+    <label for="human-rights-act">Under a prohibited ground of discrimination under <a
+        href="https://laws-lois.justice.gc.ca/eng/acts/h-6/page-1.html#h-256800">s.3(1) of the Canadian Human Rights
+        Act</a> <b>(or)</b></label>
+
+    <h3>Indicate Canadian Human Rights Act ground</h3>
+    <p class="section-description">This section is required if you have indicated that you are unvaccinated under a
+      prohibited ground of
+      discrimination under s.3(1) of the Canadian Human Rights Act.
+    </p>
+    <input type="radio" id="religion" name="human-rights-act-grounds" value="religion">
+    <label for="religion">Religion <b>(or)</b></label>
+    <br>
+    <input type="radio" id="other" name="human-rights-act-grounds" value="other">
+    <label for="other">Another prohibited ground under<a
+        href="https://laws-lois.justice.gc.ca/eng/acts/h-6/page-1.html#h-256800">s.3(1) of the Canadian Human Rights Act
+      </a> <b>(or)</b></label>
+
+    <p>By submitting this form, I certify that the statements I have made and the information I have disclosed in this
+      form are true, complete, correct and in accordance with the <a
+        href="https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=25049">Values and Ethics Code for the Public Sector</a>.
+      I
+      understand that if my vaccination status changes, I must complete a new vaccination status attestation. I
+      acknowledge that the information I submit in this form is subject to verification and audit and I specifically
+      acknowledge that my manager reserves the right, at the manager's sole discretion, to request proof of
+      vaccination.
+    </p>
+
+    <div id="signature-container">
+      <h2>Employee Signature:</h2>
+      <label for="date">Date:</label>
+      <input type="text" id="date" name="date">
+    </div>
+    <footer>
+      <p>COVID-19 Vaccination Attestation Form - February 2022 </p>
+    </footer>
+
+
+
+  </section>
+</body>
+
+</html>

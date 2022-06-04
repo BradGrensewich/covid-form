@@ -1,0 +1,62 @@
+body {
+    background-color: rgb(67, 67, 67);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.content {    
+    background-color: white;
+    margin: 0px;
+    padding: 35px;
+    width:750px;
+    border: 1px;
+    border-style: solid;    
+}
+
+header {
+    text-align: end;
+}
+
+table {
+    width:100%;
+    padding: 5px;    
+}
+
+th {
+    text-align: left;
+    padding: 8px;    
+}
+
+td {
+    text-align: center;
+}
+
+.column-header {
+    text-align: center;
+}
+
+
+.text-in {
+    background-color:lightgray;
+    width: 80%;
+}
+
+em {
+    font-style: normal;
+    color: red;
+}
+
+.section-description {
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+}
+
+#signature-container {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;    
+}
+
