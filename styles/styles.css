@@ -4,6 +4,8 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
 }
 
 .content {    
@@ -26,7 +28,8 @@ table {
 
 th {
     text-align: left;
-    padding: 8px;    
+    padding: 8px; 
+    font-size: 16px;   
 }
 
 td {
@@ -37,16 +40,51 @@ td {
     text-align: center;
 }
 
+.answers {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+input {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;      
+}
+
+.form-input {
+    display: flex;
+         
+}
+
+label {
+    align-self: center;
+}
+
 
 .text-in {
     background-color:aliceblue;
     width: 80%;
     border-style: none;
+    height: 25px;
+    margin: 10px;
+}
+
+
+#date-container {
+    display: flex;
+    justify-content: center;    
 }
 
 #date {
     border-style: none;
-    background-color: aliceblue;
+    background-color: aliceblue;    
+}
+
+#date-label {
+    font-weight: bold;
+    font-size: 20px;
+    align-self: center;
 }
 
 em {
@@ -60,6 +98,9 @@ em {
     border-color: black;
     border-style: solid;
     background-color: rgb(232, 232, 232);
+    padding: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
 }
 
 #signature-container {
@@ -68,8 +109,14 @@ em {
     align-items: center;    
 }
 
+.submit-button{
+    width: 100px;
+}
+
 #expires-when {
     background-color: aliceblue;
+    width: auto;
+    border-style: none;
 }
 
 textarea {

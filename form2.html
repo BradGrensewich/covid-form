@@ -14,76 +14,107 @@
   <section class="content">
     <header><strong>Protected B</strong> (when completed)</header>
     <h1>Process request for accommodation, if applicable</h1>
-    
+
     <form action="./menu.html">
+
       <p class="section-description">This section needs to be completed by your manager.</p>
       <h3>I have received and reviewed the documentation <em>(required)</em></h3>
-      <input type="radio" id="necessary-documentation" name="documentation-received" value="necessary-documentation"
-        required>
-      <label for="necessary-documentation">Necessary supporting documentation; or
-      </label>
-      <br>
-      <input type="radio" id="alternate-documentation" name="documentation-received" value="alternate-documentation"
-        required>
-      <label for="alternate-documentation">Alternative documentation in consultation with my departmental HR
-        specialists;</label>
-      <br>
-      <input type="checkbox" id="manager-bureaucracy-acknowlegment" name="manager-acknowledges-bureaucracy"
-        value="manager-bureaucracy-acknowlegment" required>
-      <label for="manager-bureaucracy-acknowlegment">The supporting documentation will be retained as per
-        information management protocols, retention
-        guidelines and in accordance with the Privacy Act and its Regulations <em>(Manager acknowledgement is
-          required)</em>
-      </label>
+      <div class="answers">
+        <div class="form-input">
+          <input type="radio" id="necessary-documentation" name="documentation-received" value="necessary-documentation"
+            required>
+          <label for="necessary-documentation">Necessary supporting documentation; or
+          </label>
+        </div>
+        <br>
+        <div class="form-input">
+          <input type="radio" id="alternate-documentation" name="documentation-received" value="alternate-documentation"
+            required>
+          <label for="alternate-documentation">Alternative documentation in consultation with my departmental HR
+            specialists;</label>
+        </div>
+        <br>
+        <div class="form-input">
+          <input type="checkbox" id="manager-bureaucracy-acknowlegment" name="manager-acknowledges-bureaucracy"
+            value="manager-bureaucracy-acknowlegment" required>
+          <label for="manager-bureaucracy-acknowlegment">The supporting documentation will be retained as per
+            information management protocols, retention
+            guidelines and in accordance with the Privacy Act and its Regulations <em>(Manager acknowledgement is
+              required)</em>
+        </div>
+        </label>
+      </div>
 
       <h2>Decision</h2>
       <h3>Duty to accommodate <em>(required)</em></h3>
-      <input type="radio" id="duty-doesn't-apply" name="duty-to-accomodate-necessary" value="duty-doesn't-apply"
-        required>
-      <label for="duty-doesn't-apply">Duty to accommodate <b>does not apply</b> <a
-          href="https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=32694">(refer to Policy on COVID-19
-          Vaccination for the Core Public
-          Administration Including the Royal Canadian Mounted Police)</a>
-      </label>
-      <br>
-      <input type="radio" id="duty-applies" name="duty-to-accomodate-necessary" value="duty-applies" required>
-      <label for="duty-applies">Duty to accommodate <b>applies</b> (I have reviewed and accepted the
-        justification)
-      </label>
+      <div class="answers">
+        <div class="form-input">
+          <input type="radio" id="duty-doesn't-apply" name="duty-to-accomodate-necessary" value="duty-doesn't-apply"
+            required>
+          <label for="duty-doesn't-apply">Duty to accommodate <b>does not apply</b> <a
+              href="https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=32694">(refer to Policy on COVID-19
+              Vaccination for the Core Public
+              Administration Including the Royal Canadian Mounted Police)</a>
+          </label>
+        </div>
+        <br>
+        <div class="form-input">
+          <input type="radio" id="duty-applies" name="duty-to-accomodate-necessary" value="duty-applies" required>
+          <label for="duty-applies">Duty to accommodate <b>applies</b> (I have reviewed and accepted the
+            justification)
+          </label>
+        </div>
+      </div>
 
       <h3>Accommodation duration<em>(required)</em></h3>
-      <input type="radio" id="permanent" name="accommodation-duration" value="permanent" required>
-      <label for="permanent">Permanent; or</label>
-      <br>
-      <input type="radio" id="expires" name="accommodation-duration" value="expires" required>
-      <label for="expires">Time limited, expiring on (enter DATE):<em>(required)</em></label>
-      <input type="text" id="expires-when" name="accomodation-duration">
+      <div class="answers">
+        <div class="form-input">
+          <input type="radio" id="permanent" name="accommodation-duration" value="permanent" required>
+          <label for="permanent">Permanent; or</label>
+        </div>
+        <br>
+        <div class="form-input">
+          <input type="radio" id="expires" name="accommodation-duration" value="expires" required>
+          <label for="expires">Time limited, expiring on (enter DATE):<em>(required)</em></label>
+          <input type="text" id="expires-when" name="accomodation-duration">
+        </div>
+      </div>
 
       <h3>Accommodation measure<em>(required)</em></h3>
-      <input type="checkbox" id="telework-regular-duties" name="accommodation-measure" value="telework-regular-duties"
-        required>
-      <label for="telework-regular-duties">Performing regular duties/responsibilities through telework supported by a
-        telework agreement as per the
-        <a href="https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=32636">Directive on Telework</a>;
-      </label>
-      <br>
-      <input type="checkbox" id="telework-alternate-duties" name="accommodation-measure"
-        value="telework-alternate-duties" required>
-      <label for="telework-alternate-duties">Assigning alternate duties/responsibilities that can be done through
-        telework supported by a telework
-        agreement as per the
-        <a href="https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=32636">Directive on Telework</a>;
-      </label>
-      <br>
-      <input type="checkbox" id="testing" name="accommodation-measure"
-        value="testing" required>
-      <label for="testing">Testing as per Health Canada testing framework; and/or,</label>
-      <br>
-      <input type="checkbox" id="other" name="accommodation-measure"
-        value="other" required>
-      <label for="other">Other measures <b>(must specify)</b>:</label>
+      <div class="answers">
+        <div class="form-input">
+          <input type="checkbox" id="telework-regular-duties" name="accommodation-measure"
+            value="telework-regular-duties" required>
+          <label for="telework-regular-duties">Performing regular duties/responsibilities through telework supported by
+            a
+            telework agreement as per the
+            <a href="https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=32636">Directive on Telework</a>;
+          </label>
+        </div>
+        <br>
+        <div class="form-input">
+          <input type="checkbox" id="telework-alternate-duties" name="accommodation-measure"
+            value="telework-alternate-duties" required>
+          <label for="telework-alternate-duties">Assigning alternate duties/responsibilities that can be done through
+            telework supported by a telework
+            agreement as per the
+            <a href="https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=32636">Directive on Telework</a>;
+          </label>
+        </div>
+        <br>
+        <div class="form-input">
+          <input type="checkbox" id="testing" name="accommodation-measure" value="testing" required>
+          <label for="testing">Testing as per Health Canada testing framework; and/or,</label>
+        </div>
+        <br>
+        <div class="form-input">
+          <input type="checkbox" id="other" name="accommodation-measure" value="other" required>
+          <label for="other">Other measures <b>(must specify)</b>:</label>
+        </div>
+      </div>
 
-      <p class="section-description">For privacy reasons, only include information related to the accommodation measure being taken, not
+      <p class="section-description">For privacy reasons, only include information related to the accommodation measure
+        being taken, not
         information related to the employee's personal accommodation request. Examples could include adjusted
         hours, flexible schedule, etc.
       </p>
@@ -93,7 +124,7 @@
 
       <footer>
         <p>COVID-19 Vaccination Attestation Form - February 2022 </p>
-        <input type="submit">
+        <input type="submit" class="submit-button">
       </footer>
     </form>
   </section>
