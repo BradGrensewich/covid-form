@@ -43,17 +43,19 @@ td {
 .answers {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+        
 }
 
 input {
     width: 25px;
     height: 25px;
-    margin-right: 10px;      
+    margin-right: 10px;  
+    min-width: 25px;  
+        
 }
 
 .form-input {
-    display: flex;
+    display: flex;       
          
 }
 
